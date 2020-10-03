@@ -5,11 +5,11 @@ then
 	echo -e "Run The Script As Root, Are Your Drunk Dude ?"
 else
 	echo
-	echo -e "#########################################################"
-	echo -e "#                   WebCamModuleControl                 #"
-	echo -e "#  Remove or Blacklist WebCam Module From Linux Kernel  #"
-	echo -e "#                 Coder : BL4CKH47H4CK3R                #"
-	echo -e "#########################################################"
+	echo -e "################################################################"
+	echo -e "###################### WebCamModuleControl #####################"
+	echo -e "### Remove or Blacklist WebCam Module From Arch Linux Kernel ###"
+	echo -e "#################### Coder : BL4CKH47H4CK3R ####################"
+	echo -e "################################################################"
 	echo
 	echo [1] Remove WebCam Module
 	echo [2] Blacklist WebCam Module
