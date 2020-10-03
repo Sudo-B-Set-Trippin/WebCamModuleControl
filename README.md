@@ -1,2 +1,2 @@
 # WebCamModuleControl
-Remove or Blacklist WebCam Module From Linux Kernel
+Remove or Blacklist WebCam Module From Arch Linux Kernel
