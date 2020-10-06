@@ -5,16 +5,16 @@ then
 	echo -e "Run The Script As Root, Are Your Drunk Dude ?"
 else
 	echo
-	echo -e "################################################################"
-	echo -e "###################### WebCamModuleControl #####################"
-	echo -e "### Remove or Blacklist WebCam Module From Arch Linux Kernel ###"
-	echo -e "#################### Coder : BL4CKH47H4CK3R ####################"
-	echo -e "################################################################"
-	echo
-	echo [1] Remove WebCam Module
-	echo [2] Blacklist WebCam Module
-	echo [3] Fix WebCam Module
-	echo
+	echo -e "\n################################################################"
+	echo -e "#                      WebCamModuleControl                     #"
+	echo -e "#   Remove or Blacklist WebCam Module From Arch Linux Kernel   #"
+	echo -e "#                    Coder : BL4CKH47H4CK3R                    #"
+	echo -e "################################################################\n"
+	
+	echo -e "[1] Remove WebCam Module"
+	echo -e "[2] Blacklist WebCam Module"
+	echo -e "[3] Fix WebCam Module\n"
+	
 	read -p "Enter Choice [1 or 2 or 3]: " confirm
 	
 	if [[ ${confirm} == 1 ]]
