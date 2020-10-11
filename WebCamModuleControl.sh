@@ -13,14 +13,14 @@ else
 	
 	echo -e "[1] Remove WebCam Module"
 	echo -e "[2] Blacklist WebCam Module"
-	echo -e "[3] Fix WebCam Module\n"
+	echo -e "[3] Revert/Fix WebCam Module\n"
 	
-	read -p "Enter Choice [1 or 2 or 3]: " confirm
+	read -p "Enter Choice [1, 2, 3]: " confirm
 	
 	if [[ ${confirm} == 1 ]]
 	then
 		echo -e "\nRemoving Module From The Kernel ..."
-		rmmod uvcvideo
+		rmmod uvcvideo -f
 		rm -rf /lib/modules/$(uname -r)/kernel/drivers/media/usb/uvc/uvcvideo.ko.xz
 		echo -e "Enjoy Superior Privacy !\nRemoving Module Done !\n"
 		echo -e "Please Reboot Your System To Take Effect !\n"
@@ -28,7 +28,7 @@ else
 	elif [[ ${confirm} == 2 ]]
 	then
 		echo -e "\nBlacklisting Module From The Kernel ..."
-		echo -e "uvcvideo" >> /etc/modprobe.d/blacklist.conf
+		echo -e "blacklist uvcvideo" >> /etc/modprobe.d/blacklist.conf
 		echo -e "Enjoy Superior Privacy !\nBlacklisting Module Done !\n"
 		echo -e "Please Reboot Your System To Take Effect !\n"
 	
@@ -38,7 +38,7 @@ else
 		echo -e "[2] Linux [LTS]"
 		echo -e "[3] Linux [ZEN]"
 		echo -e "[4] Linux [HARDENED]\n"
-		read -p "Enter Choice [1 or 2 or 3 or 4]: " confirm
+		read -p "Enter Choice [1, 2, 3, 4]: " confirm
 		
 		if [[ ${confirm} == 1 ]]
 		then
